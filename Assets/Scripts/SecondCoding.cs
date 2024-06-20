@@ -13,7 +13,7 @@ public class SecondCoding : MonoBehaviour
     void Start()
     {
 
-        // 조건문
+        // <조건문 작성법>
         // if (조건식)
         // {
         //   조건이 참일 때 해야 할 일
