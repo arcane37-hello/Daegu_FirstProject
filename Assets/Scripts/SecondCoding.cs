@@ -9,10 +9,16 @@ public class SecondCoding : MonoBehaviour
     public bool isMan = true;
     public bool runState;
     public bool walkState;
+    public int endCount = 100;
+    public int printMax = 10;
+
+    int sum = 0;
+    int printCount = 0;
+
 
     void Start()
     {
-
+        #region 조건문 작성법
         // <조건문 작성법>
         // if (조건식)
         // {
@@ -26,6 +32,7 @@ public class SecondCoding : MonoBehaviour
         // {
         //   앞에 있는 모든 조건들이 다 성립하지 않을 때 해야 할 일
         // }
+        #endregion
 
         #region Example 1
         // if (age1 == age2)
@@ -120,6 +127,135 @@ public class SecondCoding : MonoBehaviour
         // if(runState == false) 
         // if(!runState)
         #endregion
+
+        #region 반복문 작성법
+        // 반복문
+        // for ( 시작 변수 선언 및 초기화; 종료 조건식; 증감식 )
+        // {
+        //    반복해서 수행할 내용
+        // }
+
+        // 1부터 10까지 모든 정수를 출력한다.
+        // for(int i = 0; i < 10; i = i + 1)
+        // {
+        //    print(i + 1);
+        // }
+
+        // 1부터 100까지 다 더한 값을 sum이라는 변수에 저장해서 출력한다.
+        // for (int j = 0; j < endCount; j++ )
+        // {
+        //    sum += j + 1;
+        // }
+        // print(sum);
+
+        // 누적식
+        // int num = 0;
+        // num = num + 1;
+        // num += 1;
+        // num++;
+        // num--;
+
+        // 1부터 20까지 중에 짝수만 출력한다.
+
+        // 20번 반복한다.
+        // for(int i = 0; i < 20; i++)
+        // {
+        //    int number = i + 1;
+        //    // 만일, number의 값을 2로 나눈 나머지가 0이라면...
+        //    if(number % 2 == 0)
+        //    {
+        //        // 그 number를 출력한다.
+        //        print(number);
+        //    }
+        // }
+
+        // 0부터 endCount 전까지 짝수만 출력한다. 그런데 출력된 짝수의 수가 10개에 도달하면 반복을 종료한다.
+        // 0부터 endCount 전까지 반복한다.
+        // for (int i = 0; i < endCount; i++)
+        // {
+        //    // 증가되는 값에서 2로 나눈 나머지가 0인 경우에는 출력한다.
+        //    if (i % 2 == 0)
+        //    {
+        //        print(i);
+        //        // printCount 변수에 출력한 횟수를 증가시킨다.
+        //        printCount++;
+        //        // 만일, printCount의 값이 10에 도달하면 반복을 종료한다.
+        //        if(printCount >= printMax)
+        //        {
+        //            break;
+        //        }
+        //    }
+        // }
+        #endregion
+
+        #region 중첩하기
+        // for문과 if문은 서로 중첩해서 사용할 수 잇다.
+
+        // 만일, 성별이 남성이면서, 나이가 20세 이상인 경우
+        // if(isMan && age1 >= 20)
+        // {
+
+        // }
+        // else
+        // {
+
+        // }
+
+        // if (isMan)
+        // {
+        //    if(age1 >= 20)
+        //    {
+
+        //    }
+        //    else
+        //    {
+
+        //    }
+        // }
+
+        // for(int i = 2; i < 10; i++)
+        // {
+        //    for(int j = 1; j < 10; j++)
+        //    {
+        //    print(i.ToString() + " x " + j.ToString() + " = " + (i * j).ToString());
+        //    }
+        // }
+        #endregion
+
+        #region 별 피라미드 문제
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+
+        // <풀이 1번>
+        // string star = "";
+        // for(int i = 0; i < 5; i++)
+        // {
+
+        //    star += "*";
+        //    print(star);
+        // }
+
+        // <풀이 2번>
+        // string star = "";
+        // for (int i = 0; i < 5; i++)
+        // {           
+        //    for(int j = 0; j < i + 1; j++)
+        //    {
+        //        star += "*";
+        //    }
+        //    star += "\n";
+        // }
+        // // star = "*\n**\n***\n****\n*****\n"
+        // print(star);
+        #endregion
+
+        // print("Hello World!");
+        // Debug.Log("Hello World!");
+        // Debug.LogWarning("Hello World!");
+        // Debug.LogError("Hello World!");
     }
 
 
