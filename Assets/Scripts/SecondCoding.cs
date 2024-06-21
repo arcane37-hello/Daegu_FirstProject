@@ -55,7 +55,7 @@ public class SecondCoding : MonoBehaviour
         //    print("age1과 age2의 나이가 다릅니다.");
         //  }
 
-        //    age1의 나이를 기준으로 10대부터 40대까지 어느 곳에 해당하는지를 출력한다
+        //   age1의 나이를 기준으로 10대부터 40대까지 어느 곳에 해당하는지를 출력한다
         //   예시) "age1은 30대입니다."
 
         // if (age1 < 20)
